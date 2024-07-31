@@ -7,20 +7,43 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
+//import RealityKitContent
 
 struct ContentView: View {
+    @Environment(MovieViewModel.self) private var movieViewModel
+    
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
+        @Bindable var bindableViewModel = movieViewModel
+        TabView {
+//            MovieView()
+            
+            
+            NavigationSplitView {
+                    List {
+                        ForEach(sidePerfilUserMenu.self){ item in
+                            Label(item.title, systemImage: item.icon)
+                        }
+                    }
+                    .navigationSplitViewColumnWidth(250)
+                .toolbar {
+                    ToolbarItemGroup(placement: .topBarLeading) {
+                        VStack(alignment: .leading) {
+                            Text("Series")
+                                .font(.largeTitle)
+                            Text("48 series")
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                }
+            } detail: {
+                
+            }
 
-            Text("Hello, world!")
         }
-        .padding()
     }
 }
 
 #Preview(windowStyle: .automatic) {
     ContentView()
+        .environment(MovieViewModel())
 }

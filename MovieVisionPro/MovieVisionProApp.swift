@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct MovieVisionProApp: App {
+    @State var viewModel = MovieViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(viewModel)
         }
+        
+        WindowGroup(id: "poster") {
+            if let selection = viewModel.selection {
+                MoviePoster(movie: selection)
+            }
+        }
+        .defaultSize(width: 500, height: 500)
     }
 }
