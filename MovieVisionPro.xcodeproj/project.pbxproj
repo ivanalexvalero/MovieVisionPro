@@ -24,6 +24,7 @@
 		CEBE1FB72C2E372800B08AA6 /* MovieViewModelConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE1FB62C2E372800B08AA6 /* MovieViewModelConstants.swift */; };
 		CEBE1FB92C2E38CC00B08AA6 /* MovieContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE1FB82C2E38CC00B08AA6 /* MovieContent.swift */; };
 		CEBE1FBB2C2E390B00B08AA6 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE1FBA2C2E390B00B08AA6 /* MovieDetail.swift */; };
+		CEDA91212C64067E00F78EF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA91202C64067E00F78EF6 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CEBE1FB62C2E372800B08AA6 /* MovieViewModelConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelConstants.swift; sourceTree = "<group>"; };
 		CEBE1FB82C2E38CC00B08AA6 /* MovieContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieContent.swift; sourceTree = "<group>"; };
 		CEBE1FBA2C2E390B00B08AA6 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		CEDA91202C64067E00F78EF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				CE8E737B2C191CE5001A85C8 /* APICallerConstants.swift */,
 				CEBE1FB42C2E323F00B08AA6 /* PreviewData.swift */,
 				CEBE1FB62C2E372800B08AA6 /* MovieViewModelConstants.swift */,
+				CEDA91202C64067E00F78EF6 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				CEBE1FB32C2E31F200B08AA6 /* MovieRowList.swift in Sources */,
 				CE87ECAF2C1909DE00999637 /* ContentView.swift in Sources */,
 				CE8E737E2C192247001A85C8 /* MovieViewModel.swift in Sources */,
+				CEDA91212C64067E00F78EF6 /* Constants.swift in Sources */,
 				CE0005AD2C40AA310054F65B /* MoviePoster.swift in Sources */,
 				CE8E737C2C191CE5001A85C8 /* APICallerConstants.swift in Sources */,
 				CEBE1FB72C2E372800B08AA6 /* MovieViewModelConstants.swift in Sources */,
